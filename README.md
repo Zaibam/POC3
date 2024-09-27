@@ -25,3 +25,4 @@ Já o width define a largura do elemento na horizontal. E por último o height q
 
 Muitos media features podem ter prefixado min- ou max-, ou seja, servem para definir a largura mínima ou máxima de uma condição, assim definindo se nossas estilizações serão aplicadas conforme o tamanho da tela. Vamos ver alguns exemplos:
 
+
