@@ -79,5 +79,26 @@ O orientation possui dois possíveis valores, os quais são portrait e landscape
 Já o width define a largura do elemento na horizontal. E por último o height que define a altura do elemento na vertical.
 
 Muitos media features podem ter prefixado min- ou max-, ou seja, servem para definir a largura mínima ou máxima de uma condição, assim definindo se nossas estilizações serão aplicadas conforme o tamanho da tela. Vamos ver alguns exemplos:
+# Orientação dos Dispositivos
+Landscape (paisagem/horizontal):
+```CSS
+@media (orientation: landscape) {
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+```
+
+Portrait (retrato/vertical):
+```CSS
+@media (orientation: portrait) {
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+```
 
 
