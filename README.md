@@ -7,9 +7,64 @@ Media query, nada mais é do que uma estrutura do CSS que permite aplicar estili
 Sua funcionalidade serve para direcionar determinado CSS para um meio específico de dispositivo, ou seja, definem para qual tipo de media, o CSS que você aplica em seu site será direcionado.
 
 Existem vários media types, aqui, citarei alguns:
-
+# Print
 print: Para impressoras;
+```CSS
+@media print {
+  body {
+    font-size: 12pt;
+    color: black;
+  }
+  .no-print {
+    display: none;
+  }
+}
 
+```
+# Larguras de dispositivos diferentes: 
+Smartphone (até 600px);
+```CSS
+  @media (max-width: 600px) {
+    .menu {
+      display: block;
+      width: 100%;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  }
+```
+
+Tablet (601px a 900px):
+```CSS
+@media (min-width: 601px) and (max-width: 900px) {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+```
+
+Desktop (acima de 900px):
+```CSS
+@media (min-width: 901px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+```
 # Media features no media query
 
 Um media feature é a largura da janela do documento, normalmente usado para atribuir uma condição que vai testar se o que foi definido é verdadeiro ou falso, ou seja, são elementos do CSS que atribuídos a estrutura do media para exibir quando a estilização sofrerá modificação.
